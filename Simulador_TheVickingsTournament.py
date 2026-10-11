@@ -53,6 +53,8 @@ if "bye_usado" not in st.session_state:
     st.session_state.bye_usado = False
 if "tie_data" not in st.session_state:
     st.session_state.tie_data = None
+if "tie_resolution" not in st.session_state:
+    st.session_state.tie_resolution = None
 
 # ==========================
 # FUNCIONES AUXILIARES
