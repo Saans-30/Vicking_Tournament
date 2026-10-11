@@ -445,7 +445,7 @@ elif st.session_state.etapa == "resumen":
     st.markdown("<h3 style='text-align: center; color: #A9A9A9;'>RESUMEN DEL TORNEO FINAL</h3>", unsafe_allow_html=True)
     st.write("---")
     
-    col_izq, col_der = st.columns(2)
+    col_izq = st.container()
     with st.expander("🛡️ Ver Todos los Participantes", expanded=True):
         for eq in st.session_state.stats_globales.keys():
             marc = "👑" if eq == st.session_state.campeon else "🛡️"
